@@ -16,3 +16,16 @@ def biseccion(f,a,b,k):
         Iter+=1
 
     return c, Ea, Iter
+
+#Método de punto fijo
+def pf(f,g,x0,k):
+    Ea=np.abs(f(x0))
+    Iter=0
+    while Ea > 0.5*10**(-k):
+        xn = g(x0)
+        En = np.abs(f(xn))
+        Iter+=1
+        Ea = En
+        x0 = xn
+    
+    return  x0, Ea, Iter
