@@ -1,0 +1,4 @@
+Instrucciones:
+
+- Crear una carpeta con su nombre y dentro de ella subir los avances que tenga de las tareas que se dejan.
+- Dentro de esa carpeta crear un archivo como este con el nombre: "Inquietudes_por_resolver.txt" y expresar dentro de él las inquietuden o inconveniente que tienen pendiente resolver.
