@@ -15,7 +15,7 @@ b=2
 #Solución
 k=5
 x0=1.5
-Sol, Error, Iteraciones = eq.pf(f,g,x0,k)
+Sol, Error, Iteraciones = eq.newtonraphson(f,g,x0,k)
 print('La solución es x=%1.5f con %i iteraciones y %1.1e'%(Sol[-1],Iteraciones[-1],Error[-1]))
 
 #grafica de g(x) en [a,b]
