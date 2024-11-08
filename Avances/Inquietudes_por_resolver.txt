@@ -4,4 +4,3 @@ Instrucciones:
 - Dentro de esa carpeta crear un archivo como este con el nombre: "Inquietudes_por_resolver.txt" y expresar dentro de él las inquietuden o inconveniente que tienen pendiente resolver.
 
 
-Juan Manuel Martinez: se desea optimizar las interfaces que he realizado dentro de mi carpeta para que puedan aceptar funciones trigonometricas, exponenciales, logaritmicas, etc-. Cualquier aporte por parte de ustedes lo recibire con agradecimiento.
