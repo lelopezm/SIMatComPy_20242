@@ -21,6 +21,9 @@ def pf(f, g, x0, k):
         S.append(x0)
         E.append(Ea)
         I.append(Iter)
+
+        if Ea > 10 :
+            raise RuntimeError("la función g(x) no es adecuada")
     return S, E, I
 
 
@@ -150,37 +153,37 @@ miFrame.pack(side=TOP, padx=20, pady=20)
 miFrame.config(bg="blue", border=15, width=600, height=400, relief=GROOVE)
 
 # Campos de entrada y etiquetas
-Label(miFrame, text="Función f(x):", bg="blue", fg="white").grid(
+Label(miFrame, text="f(x):", bg="blue", fg="white").grid(
     row=0, column=0, padx=10, pady=10
 )
 funcion_f_entry = Entry(miFrame, width=30)
 funcion_f_entry.grid(row=0, column=1, padx=10, pady=10)
 
-Label(miFrame, text="Función g(x):", bg="blue", fg="white").grid(
+Label(miFrame, text="g(x):", bg="blue", fg="white").grid(
     row=1, column=0, padx=10, pady=10
 )
 funcion_g_entry = Entry(miFrame, width=30)
 funcion_g_entry.grid(row=1, column=1, padx=10, pady=10)
 
-Label(miFrame, text="Intervalo [a]:", bg="blue", fg="white").grid(
+Label(miFrame, text="a:", bg="blue", fg="white").grid(
     row=2, column=0, padx=10, pady=10
 )
 intervalo_a_entry = Entry(miFrame, width=30)
 intervalo_a_entry.grid(row=2, column=1, padx=10, pady=10)
 
-Label(miFrame, text="Intervalo [b]:", bg="blue", fg="white").grid(
+Label(miFrame, text="b:", bg="blue", fg="white").grid(
     row=3, column=0, padx=10, pady=10
 )
 intervalo_b_entry = Entry(miFrame, width=30)
 intervalo_b_entry.grid(row=3, column=1, padx=10, pady=10)
 
-Label(miFrame, text="Valor inicial (x0):", bg="blue", fg="white").grid(
+Label(miFrame, text="Valor inicial:", bg="blue", fg="white").grid(
     row=4, column=0, padx=10, pady=10
 )
 x0_entry = Entry(miFrame, width=30)
 x0_entry.grid(row=4, column=1, padx=10, pady=10)
 
-Label(miFrame, text="Número de decimales:", bg="blue", fg="white").grid(
+Label(miFrame, text="Decimales correctos:", bg="blue", fg="white").grid(
     row=5, column=0, padx=10, pady=10
 )
 decimales_entry = Entry(miFrame, width=30)
